@@ -1,0 +1,195 @@
+{
+  "status": "completed_presentation_export",
+  "source_report_sha256": {
+    "tests_full": "6e8915dd6cfbc4c86deeb9cb63414e6c1af46541e088e1e0f98d583119c05aba",
+    "tests_clean_staging": "ac4a897eb0d5df16eb32d6b6a159b41f3a409c84498ced428ea6882de273efac",
+    "final_assistant_review": "8968da1cc5ae381f5e472d70ca4510650f5eecb0be43aed9b283683cf8a3fd00",
+    "custom_questions": "552c9b03e05f937773151d1b39ec11f5ae2e6d1b0f76857fdfceb501160e739c",
+    "custom_calibration_collection": "9fff83029e9bbfb79106762c271a45ff87e57b472305a784fdf20fd8340685cc"
+  },
+  "tests": {
+    "local": {
+      "run": 328,
+      "passed": 328,
+      "skipped": 0
+    },
+    "clean_code_staging": {
+      "run": 322,
+      "passed": 322,
+      "skipped_classes": 1,
+      "unexecuted_real_data_methods": 6
+    },
+    "scope": "Same tested Windows environment. Staging excludes historical data/results/models. Scoring cache is locally prepared and hash-verified, not included in Git."
+  },
+  "custom_questions": {
+    "status": "completed",
+    "scoring": {
+      "status": "completed",
+      "question_count": 3,
+      "scored_count": 2,
+      "unscored_count": 1,
+      "metrics": {
+        "metric": "cmrc2018_official",
+        "count": 2,
+        "skipped": 0,
+        "em": 50.0,
+        "f1": 91.66666666666666,
+        "average": 70.83333333333333,
+        "per_item": [
+          {
+            "id": "custom_1",
+            "em": 100.0,
+            "f1": 100.0
+          },
+          {
+            "id": "custom_2",
+            "em": 0.0,
+            "f1": 83.33333333333333
+          }
+        ]
+      },
+      "scoring_provenance": {
+        "metric": "cmrc2018_official_v5_special",
+        "unit": "percent",
+        "source_url": "https://github.com/ymcui/cmrc2018/blob/c0eb1b6ba219847457e6af3180da722bbeb656af/squad-style-data/cmrc2018_evaluate.py",
+        "upstream_revision": "c0eb1b6ba219847457e6af3180da722bbeb656af",
+        "upstream_sha256": "56da606758e4d8607c37af6acecfb4811ede6eb10dd54031deb75231324ba783",
+        "adapter_sha256": "b294cf1628607893a4bdf55179779a093a78ac53077da44cb97a42d7ff607cba",
+        "python3_compatibility": "four checked substitutions; upstream file unmodified",
+        "nltk_version": "3.9.2",
+        "punkt": {
+          "repository": "https://github.com/nltk/nltk_data",
+          "revision": "550b6625bcef1f2abff2ff770a5a0d272c9c6b2a",
+          "source_url": "https://raw.githubusercontent.com/nltk/nltk_data/550b6625bcef1f2abff2ff770a5a0d272c9c6b2a/packages/tokenizers/punkt_tab.zip",
+          "archive_sha256": "e57f64187974277726a3417ca6f181ec5403676c717672eef6a748a7b20e0106",
+          "archive_bytes": 4319076,
+          "files": [
+            {
+              "path": "nltk_data/tokenizers/punkt_tab/english/collocations.tab",
+              "archive_path": "punkt_tab/english/collocations.tab",
+              "sha256": "8e2da1225e4dd2cc9dba261ee231ccb134859e21b46006e7f472c5ee269af0cf",
+              "bytes": 594
+            },
+            {
+              "path": "nltk_data/tokenizers/punkt_tab/english/sent_starters.txt",
+              "archive_path": "punkt_tab/english/sent_starters.txt",
+              "sha256": "f3f8535483e1dba487241b764945168123bca3209a9645e59acd1225dc76edac",
+              "bytes": 241
+            },
+            {
+              "path": "nltk_data/tokenizers/punkt_tab/english/abbrev_types.txt",
+              "archive_path": "punkt_tab/english/abbrev_types.txt",
+              "sha256": "92a3e070f43d9b4c5534758ca40ad7343b04e7e29bfe0c2eb658a39445a4f779",
+              "bytes": 619
+            },
+            {
+              "path": "nltk_data/tokenizers/punkt_tab/english/ortho_context.tab",
+              "archive_path": "punkt_tab/english/ortho_context.tab",
+              "sha256": "4bbcca25ed3d3f06c02402abf8419b9f033b8adc06e7b482eca4e45f81a5dc4c",
+              "bytes": 236303
+            },
+            {
+              "path": "nltk_data/tokenizers/punkt_tab/README",
+              "archive_path": "punkt_tab/README",
+              "sha256": "d3251cae66a9359bd68c039e3a46172a05ca9df0b27dcdfa23ae594d68d27ec4",
+              "bytes": 8574
+            }
+          ]
+        }
+      },
+      "per_item": [
+        {
+          "id": "custom_1",
+          "scored": true,
+          "em": 100.0,
+          "f1": 100.0
+        },
+        {
+          "id": "custom_2",
+          "scored": true,
+          "em": 0.0,
+          "f1": 83.33333333333333
+        },
+        {
+          "id": "custom_3",
+          "scored": false,
+          "em": null,
+          "f1": null
+        }
+      ]
+    },
+    "rows": [
+      {
+        "id": "custom_1",
+        "context": "以下为自编虚构活动通知：青禾阅读室的旧书交换活动安排在周三下午两点，地点是一楼大厅。",
+        "question": "旧书交换活动什么时候开始？",
+        "answers": [
+          "周三下午两点",
+          "星期三下午两点"
+        ],
+        "answer": "周三下午两点",
+        "has_reference": true,
+        "stop_reason": "eos"
+      },
+      {
+        "id": "custom_2",
+        "context": "以下为自编虚构设备说明：橙色灯表示充电，蓝色灯表示充电完成。擦拭设备之前，必须先断开电源。",
+        "question": "擦拭设备之前必须做什么？",
+        "answers": [
+          "断开电源",
+          "先断开电源"
+        ],
+        "answer": "必须先断开电源",
+        "has_reference": true,
+        "stop_reason": "eos"
+      },
+      {
+        "id": "custom_3",
+        "context": "以下为自编虚构图书室通知：图书室周一至周五上午九点开放，下午六点关闭。通知没有提供周末安排。",
+        "question": "图书室周日几点开放？",
+        "answers": [],
+        "answer": "资料未提供",
+        "has_reference": false,
+        "stop_reason": "eos"
+      }
+    ]
+  },
+  "custom_calibration": {
+    "status": "completed",
+    "completed_documents": 1,
+    "layers": 28,
+    "token_counts": [
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256
+    ],
+    "reload_exact": true
+  },
+  "human_acceptance_performed": false,
+  "independent_human_review": false
+}

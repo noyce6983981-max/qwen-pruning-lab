@@ -1,0 +1,4 @@
+# Keep source/provenance byte hashes stable across Windows and Linux checkouts.
+* -text
+*.png binary
+*.pdf binary

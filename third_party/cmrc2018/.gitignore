@@ -1,0 +1,3 @@
+# Local tokenizer models are fetched separately; upstream license is unclarified.
+nltk_data/
+__pycache__/

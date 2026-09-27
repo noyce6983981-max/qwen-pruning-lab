@@ -1,0 +1,31 @@
+{
+  "repository": "https://github.com/ymcui/cmrc2018",
+  "revision": "c0eb1b6ba219847457e6af3180da722bbeb656af",
+  "version": "v5-special",
+  "retrieved_date": "2026-09-27",
+  "upstream_files_unmodified": true,
+  "license": "CC-BY-SA-4.0",
+  "files": [
+    {
+      "path": "cmrc2018_evaluate.py",
+      "upstream_path": "squad-style-data/cmrc2018_evaluate.py",
+      "source_url": "https://raw.githubusercontent.com/ymcui/cmrc2018/c0eb1b6ba219847457e6af3180da722bbeb656af/squad-style-data/cmrc2018_evaluate.py",
+      "bytes": 4328,
+      "sha256": "56da606758e4d8607c37af6acecfb4811ede6eb10dd54031deb75231324ba783"
+    },
+    {
+      "path": "LICENCE",
+      "upstream_path": "LICENCE",
+      "source_url": "https://raw.githubusercontent.com/ymcui/cmrc2018/c0eb1b6ba219847457e6af3180da722bbeb656af/LICENCE",
+      "bytes": 20131,
+      "sha256": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297"
+    }
+  ],
+  "nltk": {
+    "version": "3.9.2",
+    "license": "Apache-2.0 (code only; Punkt model license is unclarified)",
+    "license_source_url": "https://raw.githubusercontent.com/nltk/nltk/3.9.2/LICENSE.txt",
+    "wheel_sha256": "1e209d2b3009110635ed9709a67a1a3e33a10f799490fa71cf4bec218c11c88a"
+  },
+  "python3_adapter": "scripts/cmrc_official.py applies four checked compatibility substitutions in memory; metric formulas are unchanged"
+}
